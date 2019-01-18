@@ -15,10 +15,6 @@ var CrystalGame = function() {
         'http://www.photo-dictionary.com/photofiles/list/1337/1838emerald.jpg'
     ]
 
-    Random_i=Math.floor(Math.random()*102) + 18;
-    //console.log(Random_i);
-
-    $("#computer_random").html("Challenge: "+ Random_i);
 
     for (var i=0; i<4; i++){
 
@@ -37,6 +33,12 @@ var CrystalGame = function() {
         $(".crystals").append(crystal);
 
     }
+
+    Random_i=Math.floor(Math.random()*102) + 18;
+    //console.log(Random_i);
+
+    $("#computer_random").html("Challenge: "+ Random_i);
+
     $("#prev").html("Total Score: " + former);
 }
 
