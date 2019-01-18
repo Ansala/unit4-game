@@ -55,7 +55,7 @@ $(document).on('click', ".crystal", function(){
     console.log(former);
 
     if(former > Random_i ){
-        loseCount--;
+        loseCount++;
         $("#lose").html("You Lost: " + loseCount);
         former = 0;
        
